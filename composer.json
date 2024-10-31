@@ -1,0 +1,23 @@
+{
+  "name": "unikforce/really-easy-banner",
+  "description": "Really easy banner is for showing the wp banner.",
+  "autoload": {
+    "psr-4": {
+      "UnikForce\\REB\\Admin\\": "admin/",
+      "UnikForce\\REB\\Frontend\\": "frontend/",
+      "UnikForce\\REB\\Includes\\": "includes/"
+    },
+    "files": [
+      "includes/Helper.php",
+      "includes/codestar-framework/codestar-framework.php",
+      "admin/Options.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "unikforce",
+      "email": "contact@unikforce.com"
+    }
+  ],
+  "require": {}
+}

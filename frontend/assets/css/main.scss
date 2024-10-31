@@ -1,0 +1,39 @@
+// Font Import
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// Variable
+@import "variable";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Jost', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+[data-background] {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.divGap {
+  height: 50px;
+}
+
+@import "grid-layout";
+// Common
+@import "common";
+// Banner 01
+@import "banner-1";
+// Banner 02
+@import "banner-2";
+// Banner 03
+@import "banner-3";

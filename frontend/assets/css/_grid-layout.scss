@@ -1,0 +1,161 @@
+.reb-container{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+    @media (min-width:576px) {
+        max-width: 540px;
+    }
+    @media (min-width:768px) {
+        max-width: 720px;
+    }
+    @media (min-width:992px) {
+        max-width: 960px;
+    }
+    @media (min-width:1200px) {
+        max-width: 1140px;
+    }
+    @media (min-width:1400px) {
+        max-width: 1320px;
+    }
+}
+.reb-row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+    >* {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        margin-top: var(--bs-gutter-y);
+    }
+}
+.d-flex{
+    display: flex;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-row-reverse{
+    flex-direction: row-reverse;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-column-reverse{
+    flex-direction: column-reverse;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-start{
+    justify-content: flex-start;
+}
+.justify-content-end{
+    justify-content: flex-end;
+}
+.justify-content-around{
+    justify-content: space-around;
+}
+.justify-content-evenly{
+    justify-content: space-evenly;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-items-start{
+    align-items: flex-start;
+}
+.align-items-end{
+    align-items: flex-end;
+}
+.align-items-center{
+    align-items: center;
+}
+.align-items-start{
+    align-items: flex-start;
+}
+
+$column: 12;
+
+[class^=reb-col-] {
+    flex-basis: auto;
+    width: 100%;
+}
+
+// @media (min-width: 1400px){
+//     @for $i from 1 through $column {
+//         .reb-col-xxl-#{$i} {
+//             flex: 0 0 auto;
+//             width: (100% / ($column / $i));
+//         }
+//     }
+// }
+// @media (max-width: 1399px){
+//     @for $i from 1 through $column {
+//         .reb-col-xl-#{$i} {
+//             flex: 0 0 auto;
+//             width: (100% / ($column / $i));
+//         }
+//     }
+// }
+// @media (max-width: 1199px){
+//     @for $i from 1 through $column {
+//         .reb-col-lg-#{$i} {
+//             flex: 0 0 auto;
+//             width: (100% / ($column / $i));
+//         }
+//     }
+// }
+
+@media (min-width: 575px){
+    @for $i from 1 through $column {
+        .reb-col-#{$i} {
+            flex: 0 0 auto;
+            width: (100% / ($column / $i));
+        }
+    }
+}
+@media (min-width: 767px){
+    @for $i from 1 through $column {
+        .reb-col-#{$i} {
+            flex: 0 0 auto;
+            width: (100% / ($column / $i));
+        }
+    }
+    @for $i from 1 through $column {
+        .reb-col-sm-#{$i} {
+            flex: 0 0 auto;
+            width: (100% / ($column / $i));
+        }
+    }
+}
+@media (min-width: 991px){
+    @for $i from 1 through $column {
+        .reb-col-#{$i} {
+            flex: 0 0 auto;
+            width: (100% / ($column / $i));
+        }
+    }
+    @for $i from 1 through $column {
+        .reb-col-sm-#{$i} {
+            flex: 0 0 auto;
+            width: (100% / ($column / $i));
+        }
+    }
+    @for $i from 1 through $column {
+        .reb-col-md-#{$i} {
+            flex: 0 0 auto;
+            width: (100% / ($column / $i));
+        }
+    }
+}

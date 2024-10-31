@@ -1,0 +1,30 @@
+.reb-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.reb-text {
+    font-weight: $rebFont-SemiBold;
+    font-size: 1.36rem;
+}
+
+.reb-link {
+    color: $rebText-color-2;
+}
+.reb-btn{
+    a{
+        display: inline-block;
+        width: 175px;
+        height: 49px;
+        border: 1px solid $rebButton-color-1;
+        background-color: $rebButton-color-1;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
